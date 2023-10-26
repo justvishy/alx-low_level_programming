@@ -15,6 +15,7 @@ int main(void)
 		putchar(string[a]);
 		a++;
 	}
+	putchar('\n');
 
 	return (1);
 }
