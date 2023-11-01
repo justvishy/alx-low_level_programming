@@ -10,8 +10,8 @@ void print_alphabet(void)
 	
 	while (alpha <= 122)
 	{
-		putchar(alpha);
+		_putchar(alpha);
 		alpha++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
