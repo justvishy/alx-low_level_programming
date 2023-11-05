@@ -2,7 +2,8 @@
 #include <ctype.h>
 
 /**
- * _islower - this finds the upper character01~
+ * _islower - this finds the upper character01
+ * @c: this is the input
  * Return: 1 or 0
  */
 
