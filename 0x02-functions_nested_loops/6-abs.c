@@ -10,6 +10,7 @@
 int _abs(int n)
 {
 	int j = n;
+
 	intmax_t imaxabs(intmax_t j);
 
 	if (j < 0)
