@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - this finds the upper character
+ * print_alphabet_x10 - this finds the upper character
  */
 
 void print_alphabet_x10(void)
