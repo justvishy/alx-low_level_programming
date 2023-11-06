@@ -4,6 +4,7 @@
  * add - this is a function
  * @n1: value 1
  * @n2: value 2
+ * Return: add
  */
 
 int add(int n1, int n2)
