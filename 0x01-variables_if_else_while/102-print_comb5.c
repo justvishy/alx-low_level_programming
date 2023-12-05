@@ -16,7 +16,7 @@ int main(void)
 
 	while ((num1 <= 57 && num2 <= 57 && num3 <= 57 && num4 <= 57))
 	{
-		int (set = 49)
+		if (set == 49)
 		{
 			putchar(',');
 			putchar(' ');
