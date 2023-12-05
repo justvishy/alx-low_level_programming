@@ -8,7 +8,6 @@
 
 int main(void)
 {
-	int num = 1024;
 	int x = 0;
 	int sum = 0;
 
