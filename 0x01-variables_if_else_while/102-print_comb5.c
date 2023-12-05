@@ -13,13 +13,13 @@ int main(void)
 	int num3 = 48;
 	int num4 = 49;
 
-	for (num1; num1 <= 57; num1++)
+	while (num1 <= 57)
 	{
-		for (num2; num2 <= 57; num2++)
+		while (num2 <= 57)
 		{
-			for (num3; num3 <= 57; num3++)
+			while (num3 <= 57)
 			{
-				for (num4; num4 <= 57; num4++)
+				while (num4 <= 57)
 				{
 					if (num4 >= 50 || num3 > 48)
 					{
@@ -31,16 +31,20 @@ int main(void)
 					putchar(' ');
 					putchar(num3);
 					putchar(num4);
+					num4++;
 				}
 				num4 = 48;
+				num3++;
 			}
 			num3 = num1;
 			num4 = num2 + 2;
+			num2++;
 		}
 		num2 = 48;
 		num3 = num1 + 1;
 		num4 = num2;
 		num4 += 1;
+		num1++;
 	}
 	putchar('\n');
 	return (0);
