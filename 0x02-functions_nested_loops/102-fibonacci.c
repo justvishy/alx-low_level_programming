@@ -29,4 +29,6 @@ int main(void)
 		val2 = fib;
 		x++;
 	}
+	putchar('\n');
+	return (0);
 }
