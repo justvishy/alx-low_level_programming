@@ -11,7 +11,7 @@ int main(void)
 	long int val1 = 1;
 	long int val2 = 2;
 	long int fib;
-	long int sum;
+	int sum = 2;
 
 	while (fib < 4000000)
 	{
@@ -24,7 +24,6 @@ int main(void)
 			sum += fib;
 		}
 	}
-	sum += 2;
-	printf("%ld\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
