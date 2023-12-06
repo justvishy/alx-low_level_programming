@@ -8,17 +8,18 @@
 
 int main(void)
 {
-	long long val1 = 1;
-	long long val2 = 2;
-	long long fib;
+	long int val1 = 1;
+	long int val2 = 2;
+	long int fib;
+	int x = 3;
 
-	printf("%lld, %lld, ", val1, val2);
+	printf("%ld, %ld, ", val1, val2);
 
-	for (int x = 3; x <= 50; x++)
+	while (x <= 50)
 	{
 		fib = val1 + val2;
 
-		printf("%lld", fib);
+		printf("%ld", fib);
 
 		if (x != 50)
 		{
@@ -26,5 +27,6 @@ int main(void)
 		}
 		val1 = val2;
 		val2 = fib;
+		x++;
 	}
 }
