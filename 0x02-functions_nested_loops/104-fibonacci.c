@@ -8,19 +8,19 @@
 
 int main(void)
 {
-	long int val1 = 1;
-	long int val2 = 2;
-	long int fib;
+	float val1 = 1;
+	float val2 = 2;
+	float fib;
 	int x = 3;
 
-	printf("%ld, %ld, ", val1, val2);
+	printf("%f, %f, ", val1, val2);
 	while (x <= 98)
 	{
 		fib = val1 + val2;
 		val1 = val2;
 		val2 = fib;
 
-		printf("%ld", val2);
+		printf("%f", val2);
 
 		if (x != 98)
 		{
