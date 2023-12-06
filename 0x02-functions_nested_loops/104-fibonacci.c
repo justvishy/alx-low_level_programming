@@ -13,14 +13,14 @@ int main(void)
 	float fib;
 	int x = 3;
 
-	printf("%f, %f, ", val1, val2);
+	printf("%0.f, %0.f, ", val1, val2);
 	while (x <= 98)
 	{
 		fib = val1 + val2;
 		val1 = val2;
 		val2 = fib;
 
-		printf("%f", val2);
+		printf("%0.f", val2);
 
 		if (x != 98)
 		{
