@@ -11,7 +11,7 @@ void more_numbers(void)
 
 	while (repeat <= 57)
 	{
-		while (x <= 9)
+		while (x <= 14)
 		{
 			if (x > 9)
 			{
