@@ -13,7 +13,7 @@ void print_diagonal(int n)
 
 	if (n > 0)
 	{
-		while (A < n)
+		while (n > A)
 		{
 			while (X < A)
 			{
