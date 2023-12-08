@@ -12,22 +12,29 @@ void print_triangle(int size)
 	int z = 0;
 	int x = 0;
 
-	while (size >= a)
+	if (size > 0)
 	{
-		while (size - a > z)
+		while (size >= a)
 		{
-			_putchar(' ');
-			z++;
-		}
-		z = 0;
+			while (size - a > z)
+			{
+				_putchar(' ');
+				z++;
+			}
+			z = 0;
 
-		while (a > x)
-		{
-			_putchar('#');
-			x++;
+			while (a > x)
+			{
+				_putchar('#');
+				x++;
+			}
+			x = 0;
+			_putchar('\n');
+			a++;
 		}
-		x = 0;
+	}
+	else
+	{
 		_putchar('\n');
-		a++;
 	}
 }
