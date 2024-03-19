@@ -16,11 +16,11 @@ void rev_string(char *s)
 		num++;
 	}
 
-	char str[num];
+	char sr[num] = "";
 
 	while (num != 0)
 	{
-		str[num1] = s[num];
+		sr[num1] = s[num];
 
 		num1++;
 		num--;
