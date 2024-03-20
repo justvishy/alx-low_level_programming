@@ -13,9 +13,9 @@ void print_array(int *a, int n)
 {
 	int num = 0;
 
-	if (int n < 0)
+	if (n < 0)
 	{
-		n = strlen(a);
+		n = * -1;
 	}
 
 	while (num < n)
