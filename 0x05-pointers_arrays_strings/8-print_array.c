@@ -12,13 +12,12 @@
 void print_array(int *a, int n)
 {
 	int num = 0;
-	int length = strlen(a);
 
-	while (num < length)
+	while (num < n)
 	{
 		printf("%d", a[num]);
 
-		if (num < length - 1)
+		if (num < n - 1)
 		{
 			printf(", ");
 		}
