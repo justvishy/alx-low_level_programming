@@ -13,6 +13,11 @@ void print_array(int *a, int n)
 {
 	int num = 0;
 
+	if (n < 0)
+	{
+		printf(" \n");
+	}
+
 	while (num < n)
 	{
 		printf("%d", a[num]);
