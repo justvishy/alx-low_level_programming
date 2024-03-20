@@ -19,7 +19,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		start = (length - 1) / 2;
+		start = (length + 1) / 2;
 	}
 
 	while (start < end)
