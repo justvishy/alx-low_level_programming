@@ -1,6 +1,7 @@
 #include "main.h"
 #include <string.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 /**
  * string_toupper - this makes all lowercase alpha to uppercases
@@ -16,11 +17,7 @@ char *string_toupper(char *z)
 
 	while (start < length)
 	{
-		if (isupper(z[start]))
-		{
-			continue;
-		}
-		else
+		if (isupper(z[start]) == false)
 		{
 			z[start] = toupper(z[start]);
 		}
