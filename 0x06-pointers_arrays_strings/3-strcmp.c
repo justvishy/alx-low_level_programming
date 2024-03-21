@@ -11,7 +11,7 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int sum = s1 - s2;
+	int sum = s2 - s1;
 
 	return (sum);
 }
