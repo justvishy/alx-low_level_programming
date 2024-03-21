@@ -13,21 +13,21 @@ void print_array(int *a, int n)
 {
 	int num = 0;
 
-	if (n > 0)
+	if (n == 0)
 	{
-		while (num < n)
+		printf("%d", a[num]);
+	}
+	
+	while (num < n)
+	{
+		if (num < n - 1)
 		{
-			printf("%d", a[num]);
-
-			if (num < n - 1)
-			{
-				printf(", ");
-			}
-			else
-			{
-				printf("\n");
-			}
-			num++;
+			printf("%d, ", a[num]);
 		}
+		else
+		{
+			printf("%d\n", a[num]);
+		}
+		num++;
 	}
 }
