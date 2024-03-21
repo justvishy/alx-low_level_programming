@@ -11,7 +11,17 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int sum = s2 - s1;
+	int num = 0;
 
-	return (sum);
+	while (s1[num] != '\0' && s2[num] != '\0')
+	{
+		if (s1[num] - s2[num] == 0)
+		{
+			num++;
+		}
+		else
+		{
+			return (s1 - s2)
+		}
+	}
 }
