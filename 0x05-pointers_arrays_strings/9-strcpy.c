@@ -6,6 +6,8 @@
  *
  * @dest: this is a string
  * @src: this is a string
+ *
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
@@ -19,5 +21,5 @@ char *_strcpy(char *dest, char *src)
 	}
 	dest[num] = '\0';
 
-	return dest;
+	return (dest);
 }
