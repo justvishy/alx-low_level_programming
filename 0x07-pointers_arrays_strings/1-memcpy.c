@@ -19,7 +19,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	while (z < n)
 	{
 		src[z] = dest[z];
-		z++;
+		++z;
 	}
 	return (dest);
 }
