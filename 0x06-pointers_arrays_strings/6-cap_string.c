@@ -27,7 +27,7 @@ char *cap_string(char *z)
 		}
 		else if (z[start] == '!' || z[start] == '?')
 		{
-			z[start + 1] = toupper([start]);
+			z[start + 1] = toupper(z[start]);
 		}
 		else if (z[start] == '"' || z[start] == '(' || z[start] == ')')
 		{
