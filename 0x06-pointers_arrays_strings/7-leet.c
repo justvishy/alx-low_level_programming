@@ -17,23 +17,9 @@ char *leet(char *z)
 
 	while (start < length)
 	{
-		if (z[start] == 'a' || z[start] == 'A')
-		{
-			z[start] = 4;
-		}
-		else if (z[start] == 'e' || z[start] == 'E')
-		{
-			z[start] = 3;
-		}
-		else if (z[start] == 'o' || z[start] == 'O')
-		{
-			z[start] = 0;
-		}
-		else if (z[start] == 't' || z[start] == 'T')
-		{
-			z[start] = 7;
-		}
-		else if (z[start] == 'l' || z[start] == 'L')
+		if (z[start] == 'a' || z[start] == 'A' z[start] == 'e' || z[start] == 'E' ||\
+			       	z[start] == 'o' || z[start] == 'O' || z[start] == 't' || z[start] ==\
+			       	'T' || z[start] == 'l' || z[start] == 'L')
 		{
 			z[start] = 1;
 		}
