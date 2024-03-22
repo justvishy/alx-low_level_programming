@@ -36,6 +36,7 @@ char *cap_string(char *z)
 		else if (z[start] == '{' || z[start] == '}')
 		{
 			z[start + 1] = toupper(z[start + 1]);
+		}
 		start++;
 	}
 	return (z);
