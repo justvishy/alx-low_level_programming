@@ -21,15 +21,21 @@ char *cap_string(char *z)
 		{
 			z[start + 1] = toupper(z[start + 1]);
 		}
-		else if (z[start] == ',' || z[start] == ';' || z[start] == '.' || z[start] == '!' || z[start] == '?')
+		else if (z[start] == ',' || z[start] == ';' || z[start] == '.')
 		{
 			z[start + 1] = toupper(z[start + 1]);
 		}
-		else if (z[start] == '"' || z[start] == '(' || z[start] == ')' || z[start] == '{' || z[start] == '}')
+		else if (z[start] == '!' || z[start] == '?')
+		{
+			z[start + 1] = toupper([start]);
+		}
+		else if (z[start] == '"' || z[start] == '(' || z[start] == ')')
 		{
 			z[start + 1] = toupper(z[start + 1]);
 		}
-		
+		else if (z[start] == '{' || z[start] == '}')
+		{
+			z[start + 1] = toupper(z[start + 1]);
 		start++;
 	}
 	return (z);
