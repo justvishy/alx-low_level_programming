@@ -23,7 +23,7 @@ char *leet(char *z)
 		(z[start] == 't' || z[start] == 'T') ||
 		(z[start] == 'l' || z[start] == 'L'))
 		{
-			z[start] = 0;
+			z[start] = '0';
 		}
 
 		start++;
