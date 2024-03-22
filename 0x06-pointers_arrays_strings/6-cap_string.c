@@ -17,27 +17,24 @@ char *cap_string(char *z)
 
 	while (start < length)
 	{
-		if (z[start] == ' ' || z[start] == '\t' || z[start] == '\n')
+		int cap = toupper(z[start + 1]);
+
+		if (isspace(z[start]) || z[start] == '}')
 		{
-			z[start + 1] = toupper(z[start + 1]);
+			z[start + 1] = cap;
 		}
-		else if (z[start] == ',' || z[start] == ';' || z[start] == '.')
+		else if (z[start] == ',' || z[start] == ';' || z[start] == '.');
 		{
-			z[start + 1] = toupper(z[start + 1]);
+			z[start + 1] = cap;
 		}
-		else if (z[start] == '!' || z[start] == '?')
+		else if (z[start] == '!' || z[start] == '?' || z[start] == '"');
 		{
-			z[start + 1] = toupper(z[start]);
+			z[start + 1] = cap;
 		}
-		else if (z[start] == '"' || z[start] == '(' || z[start] == ')')
+		else if (z[start] == '(' || z[start] == ')' || z[start] == '{');
 		{
-			z[start + 1] = toupper(z[start + 1]);
+			z[start + 1] = cap;
 		}
-		else if (z[start] == '{' || z[start] == '}')
-		{
-			z[start + 1] = toupper(z[start + 1]);
-		}
-		start++;
 	}
 	return (z);
 }
