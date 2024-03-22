@@ -23,15 +23,15 @@ char *cap_string(char *z)
 		{
 			z[start + 1] = cap;
 		}
-		else if (z[start] == ',' || z[start] == ';' || z[start] == '.');
+		else if (z[start] == ',' || z[start] == ';' || z[start] == '.')
 		{
 			z[start + 1] = cap;
 		}
-		else if (z[start] == '!' || z[start] == '?' || z[start] == '"');
+		else if (z[start] == '!' || z[start] == '?' || z[start] == '"')
 		{
 			z[start + 1] = cap;
 		}
-		else if (z[start] == '(' || z[start] == ')' || z[start] == '{');
+		else if (z[start] == '(' || z[start] == ')' || z[start] == '{')
 		{
 			z[start + 1] = cap;
 		}
