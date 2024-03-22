@@ -35,6 +35,8 @@ char *cap_string(char *z)
 		{
 			z[start + 1] = cap;
 		}
+
+		start++;
 	}
 	return (z);
 }
