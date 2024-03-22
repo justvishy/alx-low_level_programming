@@ -25,7 +25,7 @@ char *leet(char *z)
 		{
 			x++;
 		}
-		
+
 		if (toupper(z[start]) == letter[x])
 		{
 			z[start] = number[x];
