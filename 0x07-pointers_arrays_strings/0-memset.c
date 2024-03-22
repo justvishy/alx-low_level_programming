@@ -5,9 +5,9 @@
 /**
  * _memset - fills memory with a constant byte.
  *
- * @s - char
- * @b - char
- * @n - unsigned int
+ * @s: char
+ * @b: char
+ * @n: unsigned int
  *
  * Return: s
  */
