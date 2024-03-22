@@ -17,7 +17,7 @@ char *cap_string(char *z)
 
 	while (start < length)
 	{
-		if (z[start] == " " || z[start] == '\t' || z[start] == '\n')
+		if (z[start] == ' ' || z[start] == '\t' || z[start] == '\n')
 		{
 			z[start + 1] = toupper(z[start + 1]);
 		}
