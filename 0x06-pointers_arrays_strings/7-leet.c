@@ -14,18 +14,22 @@ char *leet(char *z)
 {
 	int length = strlen(z);
 	int start = 0;
+	char letter[5] = "AEOTL";
+	char number[5] = "43071";
+	int x;
 
 	while (start < length)
 	{
-		if ((z[start] == 'a' || z[start] == 'A') ||
-		(z[start] == 'e' || z[start] == 'E') ||
-		(z[start] == 'o' || z[start] == 'O') ||
-		(z[start] == 't' || z[start] == 'T') ||
-		(z[start] == 'l' || z[start] == 'L'))
+		x = 0;
+		while (z[start] != letter[x] && x < 5)
 		{
-			z[start] = '0';
+			x++;
 		}
-
+		
+		if (z[start] == letter[x])
+		{
+			z[start] = number[x];
+		}
 		start++;
 	}
 	return (z);
