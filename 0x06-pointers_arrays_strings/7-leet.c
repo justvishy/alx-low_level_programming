@@ -21,14 +21,14 @@ char *leet(char *z)
 	while (start < length)
 	{
 		x = 0;
-		while (z[start] != letter[x] && x < 5)
+		while (toupper(z[start]) != letter[x] && x < 5)
 		{
 			x++;
 		}
 		
-		if (z[start] == letter[x])
+		if (toupper(z[start]) == letter[x])
 		{
-			z[start] = number[x];
+			toupper(z[start]) = number[x];
 		}
 		start++;
 	}
