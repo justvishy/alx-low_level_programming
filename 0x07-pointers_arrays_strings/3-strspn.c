@@ -13,29 +13,27 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int length = strlen(s);
-	int length1 = strlen(accept);
-	int start = 0;
-	int x;
+	int start1 = 0;
+	int start2 = 0;
+	int length1 = strlen(s);
+	int length2 = strlen(accept);
 	int count = 0;
+	int reset = 0;
 
-	while (start < length)
+	while (start1 < length1)
 	{
-		x = 0;
-		while (x < length1)
+		reset = 0;
+		while (accept[start2] != '\0')
 		{
-			if (s[start] == accept[x])
+			if (s[start1] == accept[reset])
 			{
 				count++;
 				break;
 			}
-			else if (accept[x] == '\0')
-			{
-				return (count);
-			}
-			x++;
+			reset++;
+			start2++;
 		}
-		start++;
+		start1++;
 	}
 	return (count);
 }
