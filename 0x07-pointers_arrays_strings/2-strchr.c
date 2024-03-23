@@ -35,8 +35,6 @@ char *_strchr(char *s, char c)
 
 		return (*ch);
 	}
-	else
-	{
-		return (NULL);
-	}
+	
+	return(NULL);
 }
