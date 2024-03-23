@@ -30,8 +30,8 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 			reset++;
+			start2++;
 		}
-		start2++;
 		start1++;
 	}
 	return (count);
