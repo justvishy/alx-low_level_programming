@@ -31,7 +31,7 @@ char *_strchr(char *s, char c)
 
 	if (found == 1)
 	{
-		int ch = s[start];
+		char ch = s[start];
 
 		return (ch);
 	}
