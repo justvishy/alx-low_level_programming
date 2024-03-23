@@ -22,10 +22,15 @@ char *_strchr(char *s, char c)
 		{
 			start++;
 		}
-		else if (s[start] != '\0')
+		else
 		{
 			return (&s[start]);
 		}
+	}
+
+	if (s[start] == '\0')
+	{
+		return (c);
 	}
 
 	return (NULL);
