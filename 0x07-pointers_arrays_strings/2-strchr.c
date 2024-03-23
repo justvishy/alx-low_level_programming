@@ -22,6 +22,9 @@ char *_strchr(char *s, char c)
 		{
 			start++;
 		}
+		else if (s[start + 1] == '\0' && c == '\0')
+		{
+			return (&s[start]);
 		else
 		{
 			return (&s[start]);
