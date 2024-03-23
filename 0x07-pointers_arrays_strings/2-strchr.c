@@ -30,7 +30,7 @@ char *_strchr(char *s, char c)
 
 	if (s[start] == '\0')
 	{
-		return (' ');
+		return ('\0');
 	}
 
 	return (NULL);
