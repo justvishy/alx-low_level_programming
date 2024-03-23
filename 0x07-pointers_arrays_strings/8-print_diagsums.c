@@ -27,7 +27,7 @@ void print_diagsums(int *a, int size)
 	z = size - 1;
 	while (z >= 0)
 	{
-		y += a[z * size + (size - z - 1)];
+		y = a[z * size + (size - z - 1)];
 		z--;
 	}
 
