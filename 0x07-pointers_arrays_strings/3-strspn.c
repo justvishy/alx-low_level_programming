@@ -21,15 +21,14 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (start1 < length1)
 	{
-		reset = 0;
+		start2 = 0;
 		while (accept[start2] != '\0')
 		{
-			if (s[start1] == accept[reset])
+			if (s[start1] == accept[start2])
 			{
 				count++;
 				break;
 			}
-			reset++;
 			start2++;
 		}
 		start1++;
