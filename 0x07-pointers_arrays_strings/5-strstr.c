@@ -20,7 +20,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		while (needle[z])
 		{
-			if (*s == needle[z])
+			if (*haystack == needle[z])
 			{
 				z++;
 				break;
