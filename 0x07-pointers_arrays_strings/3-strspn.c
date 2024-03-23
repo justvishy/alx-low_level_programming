@@ -17,17 +17,19 @@ unsigned int _strspn(char *s, char *accept)
 	int start2 = 0;
 	int length1 = strlen(s);
 	int count = 0;
+	int reset = 0;
 
 	while (start1 < length1)
 	{
-		start2 = 0;
+		reset = 0;
 		while (accept[start2] != '\0')
 		{
-			if (s[start1] == accept[start2])
+			if (s[start1] == accept[reset])
 			{
 				count++;
 				break;
 			}
+			reset++;
 			start2++;
 		}
 		start1++;
