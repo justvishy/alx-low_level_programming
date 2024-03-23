@@ -13,11 +13,11 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int start1 = 0;
-	int start2 = 0;
+	unsigned int start1 = 0;
+	unsigned int start2 = 0;
 	int length1 = strlen(s);
-	int count = 0;
-	int reset = 0;
+	unsigned int count = 0;
+	unsigned int reset = 0;
 
 	while (start1 < length1)
 	{
