@@ -20,14 +20,14 @@ void print_diagsums(int *a, int size)
 	z = 0;
 	while(z < size)
 	{
-		x = z + a[z * size + z];
+		x = x + a[z * size + z];
 		z++;
 	}
 
 	z = size - 1;
 	while (z >= 0)
 	{
-		y = a[z * size + (size - z - 1)];
+		y += a[z * size + (size - z - 1)];
 		z--;
 	}
 
