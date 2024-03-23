@@ -18,7 +18,7 @@ void print_diagsums(int *a, int size)
 	y = 0;
 
 	z = 0;
-	while(z < size)
+	while (z < size)
 	{
 		x = x + a[z * size + z];
 		z++;
