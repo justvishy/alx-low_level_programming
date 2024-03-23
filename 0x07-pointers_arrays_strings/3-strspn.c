@@ -34,7 +34,7 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				return (count);
 			}
-			x++;
+			return (count);
 		}
 		start++;
 	}
