@@ -21,11 +21,12 @@ char *_strstr(char *haystack, char *needle)
 			needle++;
 		}
 
+		haystack++;
+
 		if (*haystack == '\0')
 		{
 			return (haystack);
 		}
-		haystack++;
 	}
 	return (NULL);
 }
