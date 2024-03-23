@@ -28,10 +28,11 @@ char *_strchr(char *s, char c)
 		}
 	}
 
-	if (s[start] == '\0')
+	if (c == '\0')
 	{
-		return ('\0');
+		s[start] = '\0';
+		return (&s[start]);
 	}
 
-	return ('\0');
+	return (NULL);
 }
