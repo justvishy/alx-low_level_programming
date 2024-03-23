@@ -16,7 +16,6 @@ unsigned int _strspn(char *s, char *accept)
 	int start1 = 0;
 	int start2 = 0;
 	int length1 = strlen(s);
-	int length2 = strlen(accept);
 	int count = 0;
 	int reset = 0;
 
