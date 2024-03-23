@@ -15,7 +15,6 @@ char *_strchr(char *s, char c)
 {
 	int length = strlen(s);
 	int start = 0;
-	int found = 0;
 
 	while (start < length)
 	{
@@ -25,15 +24,8 @@ char *_strchr(char *s, char c)
 		}
 		else
 		{
-			found = 1;
+			return (s[start]);
 		}
-	}
-
-	if (found == 1)
-	{
-		char ch = s[start];
-
-		return (*ch);
 	}
 	
 	return(NULL);
