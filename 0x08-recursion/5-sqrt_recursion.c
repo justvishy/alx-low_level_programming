@@ -23,10 +23,7 @@ int _sqrt_recursion(int n)
 	else
 	{
 		z += 1;
-		int final;
-
-		final = _sqrt_recursion(n);
+		_sqrt_recursion(n);
 		z = 0;
-		return (final);
 	}
 }
