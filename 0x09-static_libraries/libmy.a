@@ -20,3 +20,18 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+0-isupper.o/    0           0     0     644     117       `
+#include "main.h"
+
+/**
+ * _isupper - function
+ *
+ * @c: int
+ * Return: int
+ */
+
+int _isupper(int c)
+{
+	return (0);
+}
+
