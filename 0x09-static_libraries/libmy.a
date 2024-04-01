@@ -35,3 +35,18 @@ int _isupper(int c)
 	return (0);
 }
 
+0-isupper.c/    0           0     0     644     117       `
+#include "main.h"
+
+/**
+ * _isupper - function
+ *
+ * @c: int
+ * Return: int
+ */
+
+int _isupper(int c)
+{
+	return (0);
+}
+
