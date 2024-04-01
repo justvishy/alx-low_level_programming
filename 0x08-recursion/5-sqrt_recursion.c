@@ -20,7 +20,7 @@ int _sqrt_source(int n, int i)
 	}
 	else
 	{
-		return(_sqrt_source(n, i + 1));
+		return (_sqrt_source(n, i + 1));
 	}
 }
 
