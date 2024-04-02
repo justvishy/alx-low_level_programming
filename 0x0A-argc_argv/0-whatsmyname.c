@@ -10,7 +10,7 @@
  * Return: 0
  */
 
-int main(int argc, char* argv[])
+int main(char* argv[])
 {
 	printf("%s", argv[0]);
 
