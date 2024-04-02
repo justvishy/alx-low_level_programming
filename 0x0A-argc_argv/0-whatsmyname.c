@@ -9,9 +9,7 @@
  * Return: 0
  */
 
-int main(char* argv[])
+char main(char* argv[])
 {
-	printf("%s", argv[0]);
-
-	return (0);
+	return (argv[0]);
 }
