@@ -4,7 +4,6 @@
 /**
  * main - this is a main function
  *
- * @argc: int
  * @argv: array
  *
  * Return: 0
