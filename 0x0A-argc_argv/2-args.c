@@ -10,7 +10,7 @@
  * Return: 0
  */
 
-int main(int argc __attribute__((unuse d)), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	while (*argv)
 	{
