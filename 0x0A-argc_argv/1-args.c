@@ -13,7 +13,7 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 	int count = 0;
 
-	while (*argv)
+	while (*argv && *argv != '\0')
 	{
 		argv++;
 		count++;
