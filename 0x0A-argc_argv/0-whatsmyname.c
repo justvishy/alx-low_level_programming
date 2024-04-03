@@ -4,12 +4,13 @@
 /**
  * main - this is a main function
  *
+ * @argc: count
  * @argv: array
  *
  * Return: 0
  */
 
-char main(char* argv[])
+void main(int argc, char* argv[])
 {
-	return (argv[0]);
+	printf("%s\n", *argv);
 }
