@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 {
 	int result = 0;
 	int count = 1;
-	int check = 0;
+	int check;
 
 	if (argc > 2)
 	{
@@ -24,13 +24,14 @@ int main(int argc, char *argv[])
 		{
 			while (argv[count])
 			{
+				check = 0;
 				if (isdigit(*argv[check]) && *argv[check] != '\0')
 				{
 					check++;
 				}
 				else if (*argv[check] == '\0')
 				{
-					result = += atoi(argv[count]);
+					result += atoi(argv[count]);
 					break;
 				}
 				else
