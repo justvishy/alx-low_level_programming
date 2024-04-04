@@ -23,11 +23,11 @@ int main(int argc, char *argv[])
 		while (argv[count] != NULL)
 		{
 			check = 0;
-			if (isdigit(*argv[check]) && *argv[check] != '\0')
+			if (isdigit(*argv[check]))
 			{
 				check++;
 			}
-			else if (*argv[check] == '\0')
+			else if (*argv[check] == NULL)
 			{
 				result += atoi(argv[count]);
 				count++;
