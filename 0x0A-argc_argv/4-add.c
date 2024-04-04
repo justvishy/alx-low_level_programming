@@ -23,12 +23,12 @@ int main(int argc, char *argv[])
 		while (argv[count] != NULL)
 		{
 			check = 0;
-			if (!isdigit(*argv[check]) && *argv[check] != '\0')
+			if (!isdigit(*argv[count][check]) && *argv[count][check] != '\0')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else if (*argv[check] == '\0')
+			else if (*argv[count][check] == '\0')
 			{
 				break;
 			}
