@@ -29,16 +29,17 @@ int main(int argc, char *argv[])
 			}
 			else if (*argv[check] == '\0')
 			{
-				result += atoi(argv[count]);
-				count++;
-				check = 0;
+				break;
 			}
 			else
 			{
 				printf("Error\n");
 				return (1);
 			}
+		result += atoi(argv[count]);
+		count++;
 		}
+		printf("%d\n", result);
 	}
 	else
 	{
