@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 			}
 			else if (argv[count][check] == '\0')
 			{
-				return += atoi(argv[count]);
+				result += atoi(argv[count]);
 				count++;
 				check = 0;
 			}
