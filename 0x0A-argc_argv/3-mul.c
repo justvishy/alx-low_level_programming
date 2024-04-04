@@ -17,8 +17,8 @@ int main(int argc , char *argv[])
 
 	if (argc > 1)
 	{
-		while (count < argc)
-		result = result * atoi((argv[count]));
+		iwhile (count < argc)
+		result *= atoi((argv[count]));
 		printf("%d\n", result);
 		count++;
 	}
