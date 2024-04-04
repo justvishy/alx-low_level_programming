@@ -20,28 +20,24 @@ int main(int argc, char *argv[])
 
 	if (argc > 2)
 	{
-		while (count < argc)
+		while (argv[count] != NULL)
 		{
-			while (argv[count != NULL])
+			check = 0;
+			if (isdigit(*argv[check]) && *argv[check] != '\0')
 			{
-				check = 0;
-				if (isdigit(*argv[check]) && *argv[check] != '\0')
-				{
-					check++;
-				}
-				else if (*argv[check] == '\0')
-				{
-					result += atoi(argv[count]);
-					count++;
-					check = 0;
-				}
-				else
-				{
-					printf("Error\n");
-					return (1);
-				}
+				check++;
 			}
-			count++;
+			else if (*argv[check] == '\0')
+			{
+				result += atoi(argv[count]);
+				count++;
+				check = 0;
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 	}
 	else
