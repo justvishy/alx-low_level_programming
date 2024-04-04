@@ -20,15 +20,15 @@ int main(int argc, char *argv[])
 
 	if (argc > 2)
 	{
-		while (argv[count] != NULL)
+		while (argv[count])
 		{
 			check = 0;
-			if (!isdigit(*argv[count][check]) && *argv[count][check] != '\0')
+			if (!isdigit(argv[count][check]) && argv[count][check] != '\0')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else if (*argv[count][check] == '\0')
+			else if (argv[count][check] == '\0')
 			{
 				break;
 			}
