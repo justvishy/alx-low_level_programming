@@ -4,18 +4,20 @@
 /**
  * main - funcrion
  *
- * *argc: int
- * *argv: char
+ * @argc: int
+ * @argv: char
  * Return: 0 or 1
  */
 
 int main(int argc , char *argv[])
 {
 	int result = 1;
+	int count = 1;
 
 	if (argc > 1)
 	{
-		result = (*argv[1] - '0') * (*argv[2] - '0');
+		while (argv[count] != '\0')
+		result *= (argv - '0');
 		printf("%d\n", result);
 	}
 	else
@@ -25,4 +27,4 @@ int main(int argc , char *argv[])
 	}
 
 	return (0);
-}		
+}
