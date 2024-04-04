@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
 	{
 		while (argv[count])
 		{
-			check = 0;
 			if (!isdigit(argv[count][check]) && argv[count][check] != '\0')
 			{
 				printf("Error\n");
@@ -30,14 +29,14 @@ int main(int argc, char *argv[])
 			}
 			else if (argv[count][check] == '\0')
 			{
-				break;
+				return += atoi(argv[count]);
+				count++;
+				check = 0;
 			}
 			else
 			{
 				check++;
 			}
-		result += atoi(argv[count]);
-		count++;
 		}
 		printf("%d\n", result);
 	}
