@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 			{
 				check++;
 			}
-			else if (*argv[check] == NULL)
+			else if (*argv[check] == '\0')
 			{
 				result += atoi(argv[count]);
 				count++;
