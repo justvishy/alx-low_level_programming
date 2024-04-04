@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	{
 		while (count < argc)
 		{
-			while (argv[count])
+			while (argv[count != NULL])
 			{
 				check = 0;
 				if (isdigit(*argv[check]) && *argv[check] != '\0')
@@ -32,7 +32,8 @@ int main(int argc, char *argv[])
 				else if (*argv[check] == '\0')
 				{
 					result += atoi(argv[count]);
-					break;
+					count++;
+					check = 0;
 				}
 				else
 				{
