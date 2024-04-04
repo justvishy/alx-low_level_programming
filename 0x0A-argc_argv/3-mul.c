@@ -10,19 +10,19 @@
  * Return: 0 or 1
  */
 
-int main(int argc , char *argv[])
+int main(int argc, char *argv[])
 {
 	int result = 1;
 	int count = 1;
 
-	if (argc > 1)
+	if (argc > 2)
 	{
 		while (count < argc)
 		{
 			result *= atoi((argv[count]));
-			printf("%d\n", result);
 			count++;
 		}
+		printf("%d\n", result);
 	}
 	else
 	{
