@@ -17,10 +17,12 @@ int main(int argc , char *argv[])
 
 	if (argc > 1)
 	{
-		iwhile (count < argc)
-		result *= atoi((argv[count]));
-		printf("%d\n", result);
-		count++;
+		while (count < argc)
+		{
+			result *= atoi((argv[count]));
+			printf("%d\n", result);
+			count++;
+		}
 	}
 	else
 	{
