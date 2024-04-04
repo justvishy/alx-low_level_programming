@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - funcrion
@@ -17,7 +18,7 @@ int main(int argc , char *argv[])
 	if (argc > 1)
 	{
 		while (count < argc)
-		result = result * (argv[count] - '0');
+		result = result * strtol((argv[count]));
 		printf("%d\n", result);
 		count++;
 	}
