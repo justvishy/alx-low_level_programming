@@ -8,7 +8,7 @@
  * @argc: int
  * @argv: char
  *
- * Return 0 or 1;
+ * Return: 0 or 1;
  */
 
 int main(int argc, char *argv[])
