@@ -14,6 +14,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
+	int sum1 = strlen(s1);
+	int x = (int)(sum1);
 	int sum = (strlen(s1) + 1) + (strlen(s2) + 1);
 	int n = 0;
 	char *nl = " ";
@@ -40,7 +42,7 @@ char *str_concat(char *s1, char *s2)
 		return (ptr);
 	}
 
-	while (n < strlen(s1) + 3)
+	while (n < x + 3)
 	{
 		ptr[n] = *s1;
 		n++;
