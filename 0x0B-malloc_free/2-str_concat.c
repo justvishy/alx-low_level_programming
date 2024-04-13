@@ -22,10 +22,9 @@ char *str_concat(char *s1, char *s2)
 	t = "";
 	if (s1 == NULL && s2 == NULL)
 	{
-		t  = (char *) malloc(1 * sizeof(char));
+		t  = (char *) malloc(2 * sizeof(char));
 		return (t);
 		free(t);
-		t = NULL;
 	}
 	else if (s2 == NULL)
 		return (s1);
