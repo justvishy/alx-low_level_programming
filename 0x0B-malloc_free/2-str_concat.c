@@ -26,20 +26,19 @@ char *str_concat(char *s1, char *s2)
 		return (ptr);
 	}
 
-	while (*s1)
+	while (s1[n] != '\0')
 	{
-		ptr[n] = *s1;
+		ptr[n] = s1[n];
 		n++;
-		s1++;
 	}
 
-	while (*s2)
+	while (s2[o] != '\0')
 	{
-		n++;
-		ptr[n + o] = *s2;
+		ptr[n + o] = s2[o];
 		o++;
-		s2++;
 	}
+	
+	ptr[n + o] = '\0';
 	return (ptr);
 	free(ptr);
 }
