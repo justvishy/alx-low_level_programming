@@ -12,10 +12,9 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int n = 0;
 	int l = strlen(str);
 
-	ptr = (char *) malloc(l * sizeof(char));
+	ptr = (char *) malloc(sizeof(str));
 
 	if (str == NULL)
 	{
@@ -24,9 +23,9 @@ char *_strdup(char *str)
 
 	while (*str)
 	{
-		ptr[n] = *str;
+		*ptr = *str;
 		str++;
-		n++;
+		ptr++;
 	}
 	return (ptr);
 	free(str);
