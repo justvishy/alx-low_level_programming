@@ -8,7 +8,7 @@
  * Return: the duplicated string
  */
 
-int main(void)
+char *_strdup(char *str)
 {
 	char *ptr;
 	int n = 0;
