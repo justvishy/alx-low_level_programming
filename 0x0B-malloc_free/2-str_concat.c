@@ -14,6 +14,9 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
+	int sum = strlen(s1) + strlen(s2) + 1;
+	int n = 0;
+	int o = 0;
 
 	if (s1 == NULL  && s2 == NULL)
 	{
@@ -27,10 +30,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (s1);
 	}
-
-	int sum = strlen(s1) + strlen(s2) + 1;
-	int n = 0;
-	int o = 0;
 
 	ptr = (char *) malloc(sum * sizeof(char));
 
