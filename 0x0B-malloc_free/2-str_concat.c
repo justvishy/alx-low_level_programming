@@ -18,9 +18,7 @@ char *str_concat(char *s1, char *s2)
 	int n = 0;
 	int o = 0;
 
-	if (s1 == NULL  && s2 == NULL)
-		return (" ");
-	else if (s1 == NULL)
+	if (s1 == NULL)
 		return (s2);
 	else if (s2 == NULL)
 		return (s1);
