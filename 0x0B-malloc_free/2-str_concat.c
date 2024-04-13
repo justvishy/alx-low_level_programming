@@ -20,7 +20,6 @@ char *str_concat(char *s1, char *s2)
 	int n = 0;
 	int o = 0;
 
-	empstr = (char *) malloc((length + 1) * sizeof(char));
 	ptr = (char *) malloc(sum * sizeof(char));
 	empstr[0] = '\0';
 
@@ -54,5 +53,4 @@ char *str_concat(char *s1, char *s2)
 	ptr[n + o] = '\0';
 	return (ptr);
 	free(ptr);
-	free(empstr);
 }
