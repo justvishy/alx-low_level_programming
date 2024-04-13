@@ -48,6 +48,5 @@ char *str_concat(char *s1, char *s2)
 	ptr[n + o] = '\0';
 	return (ptr);
 
-	if (ptr != NULL)
-		free(ptr);
+	free(ptr);
 }
