@@ -15,17 +15,21 @@ char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
 	int sum = strlen(s1) + strlen(s2) + 1;
+	char arry[1] = {'\0'};
 	int n = 0;
 	int o = 0;
 
 	ptr = (char *) malloc(sum * sizeof(char));
 
 	if (s1 == NULL && s2 == NULL)
-		return ('\0');
+	{
+		s1 = arry;
+		s2 = arry;
+	}
 	else if (s1 == NULL)
-		return (s2);
+		s1 = arry;
 	else if (s2 == NULL)
-		return (s1);
+		s2 = arry;
 
 	if (ptr == NULL)
 	{
