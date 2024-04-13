@@ -15,7 +15,6 @@ char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
 	int sum = strlen(s1) + strlen(s2) + 1;
-	char *empstr;
 	int n = 0;
 	int o = 0;
 
