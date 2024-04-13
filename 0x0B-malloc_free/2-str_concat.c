@@ -17,15 +17,9 @@ char *str_concat(char *s1, char *s2)
 	int sum;
 	int n = 0;
 	int o = 0;
-	char *t;
 
-	t = "";
 	if (s1 == NULL && s2 == NULL)
-	{
-		t  = (char *) malloc(2 * sizeof(char));
-		return (t);
-		free(t);
-	}
+		return ("");
 	else if (s2 == NULL)
 		return (s1);
 	else if (s1 == NULL)
