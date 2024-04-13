@@ -15,11 +15,12 @@ char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
 	int sum;
+	char *emp = ' ';
 	int n = 0;
 	int o = 0;
 
 	if (s1 == NULL && s2 == NULL)
-		return (*ptr);
+		return (emp);
 	else if (s1 == NULL)
 		return (s2);
 	else if (s2 == NULL)
