@@ -7,7 +7,7 @@
  * @b: unsigned int
  */
 
-void **malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	int x;
 	char *ptr;
