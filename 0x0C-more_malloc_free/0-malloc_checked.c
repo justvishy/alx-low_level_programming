@@ -3,8 +3,9 @@
 
 /**
  * malloc_checked - checks memory
- * 
+ *
  * @b: unsigned int
+ * Return: ptr
  */
 
 void *malloc_checked(unsigned int b)
