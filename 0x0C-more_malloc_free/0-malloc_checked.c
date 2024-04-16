@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <unistd.h>
 
 /**
  * malloc_checked - checks memory
@@ -17,7 +16,6 @@ void *malloc_checked(unsigned int b)
 	ptr = (char *) malloc(x * sizeof(char));
 
 	if (ptr == NULL)
-		_exit(98);
-
-	return;
+		exit(98);
+	exit;
 }
