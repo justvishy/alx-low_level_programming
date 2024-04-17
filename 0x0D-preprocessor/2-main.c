@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char *fileiname = __FILE__;
+	char *filename = __FILE__;
 
 	while (*filename)
 	{
