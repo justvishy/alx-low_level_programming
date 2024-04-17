@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	char *filename = __FILE__;
+	char *fileiname = __FILE__;
 
 	while (*filename)
 	{
 		_putchar(*filename);
-		*filename++;
+		filename++;
 	}
 	_putchar('\n');
 	return (0);
