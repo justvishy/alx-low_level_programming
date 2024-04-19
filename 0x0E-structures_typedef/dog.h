@@ -11,7 +11,11 @@
  * Description: Longer description
  */
 
-struct dog
+/**
+ * dog - the dog
+ */
+
+typedef struct dog
 {
 	char *name;
 	float age;
