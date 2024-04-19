@@ -11,10 +11,6 @@
  * Description: Longer description
  */
 
-/**
- * dog - the dog
- */
-
 typedef struct dog
 {
 	char *name;
