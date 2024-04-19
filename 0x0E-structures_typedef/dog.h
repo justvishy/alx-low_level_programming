@@ -2,7 +2,7 @@
 #define DOG
 
 /**
- * @Structure that represents the dog
+ * dog -  structure that represents the dog
  */
 
 struct dog
