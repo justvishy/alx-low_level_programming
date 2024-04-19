@@ -13,6 +13,8 @@ void print_dog(struct dog *d)
 	char *n = d->name;
 	char *o = d->owner;
 
+	if (d == NULL)
+		return;
 	if (n == NULL)
 		n = "(nil)";
 	if (o == NULL)
