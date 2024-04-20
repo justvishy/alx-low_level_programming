@@ -10,23 +10,8 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	char *ptr = "Hello, my name is ";
-
-	if (name != NULL)
-	{
-		while (*ptr)
-		{
-			_putchar(*ptr);
-			ptr++;
-		}
-
-		while (*name)
-		{
-			_putchar(*name);
-			name++;
-		}
-		_putchar('\n');
-	}
-	else
+	if (name == NULL || f == NULL)
 		return;
+
+	f(name);
 }
