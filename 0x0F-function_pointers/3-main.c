@@ -6,12 +6,12 @@
 /**
  * main - main function
  *
- * @agrc: argument count
+ * @argc: argument count
  * @argv: argument vector
  *
  * Return: 0
  */
-int main (int __attribute__((__unused__)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
