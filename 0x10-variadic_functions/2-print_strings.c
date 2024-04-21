@@ -6,7 +6,7 @@
 /**
  * print_strings - prints the string
  *
- * @separator - this is the separator
+ * @separator: this is the separator
  * @n: number of strings
  */
 
