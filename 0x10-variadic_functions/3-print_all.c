@@ -14,6 +14,7 @@ void print_all(const char *const format, ...)
 	char *str;
 	char *separ = "";
 	va_list args;
+	int i;
 
 	va_start(args, format);
 
